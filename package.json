@@ -1,0 +1,19 @@
+{
+  "name": "pasteleria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nano155/ProyectoFinal-Molina.git"
+  },
+  "author": "Urbano Molina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nano155/ProyectoFinal-Molina/issues"
+  },
+  "homepage": "https://github.com/nano155/ProyectoFinal-Molina#readme"
+}

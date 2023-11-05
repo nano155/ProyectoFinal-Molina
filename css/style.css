@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+figure > img{
+    width: 25rem;
+    height: 10rem;
+}
+
+div{
+    border: 2px solid black;
+    width:40vh ;
+    height: 30vh;
+    padding: 10px;
+}
+
+div p{
+    color: green;
+    text-align: justify;
+    line-height: 2;
+    letter-spacing: 1px;
+}
