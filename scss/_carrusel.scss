@@ -1,0 +1,32 @@
+.carruselResponsive{
+    background-color: #fdbf72;
+    padding: 3rem;
+    font-family: $fuenteNormal;
+}
+.carruselRresponsive-tittle{
+    h1{
+        font-family: $fuenteEspecial;
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 3rem;
+        margin-left: 2rem;
+        text-transform: uppercase;
+    }
+}
+.carruselRresponsive-contenidoTexto{
+    display: flex;
+    margin-top: 3rem;
+    h4{
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    p{
+        margin: 1rem 0  0 2rem;
+    
+    }
+    img{
+        width: 8rem;
+        padding-top: 2rem;
+    }
+}

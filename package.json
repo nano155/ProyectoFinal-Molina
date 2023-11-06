@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nano155/ProyectoFinal-Molina/issues"
   },
-  "homepage": "https://github.com/nano155/ProyectoFinal-Molina#readme"
+  "homepage": "https://github.com/nano155/ProyectoFinal-Molina#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.1"
+  }
 }
