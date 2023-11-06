@@ -1,5 +1,7 @@
-.carruselResponsive{
+.contenedorCarruseles{
     background-color: #fdbf72;
+}
+.carruselResponsive{
     padding: 3rem;
     font-family: $fuenteNormal;
 }
@@ -29,4 +31,7 @@
         width: 8rem;
         padding-top: 2rem;
     }
+}
+.carrusel{
+    display: none;
 }

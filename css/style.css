@@ -12,7 +12,7 @@ header {
 
 .nav {
   display: flex;
-  padding: 10px;
+  padding: 20px;
   align-items: center;
   justify-content: space-between;
 }
@@ -24,7 +24,9 @@ header {
 
 .nav-list {
   display: none;
+  gap: 2rem;
   list-style: none;
+  font-size: 1rem;
 }
 
 .nav-burguer {
@@ -33,7 +35,11 @@ header {
 
 .nav-carrito_table {
   display: none;
-  padding: 0 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+.nav-carrito_table table {
+  width: 100%;
 }
 .nav-carrito_table table th {
   padding: 9px;
@@ -99,10 +105,14 @@ header {
 
 .content {
   max-width: 1300px;
+  margin: 0 auto;
+}
+
+.contenedorCarruseles {
+  background-color: #fdbf72;
 }
 
 .carruselResponsive {
-  background-color: #fdbf72;
   padding: 3rem;
   font-family: "Bitter", serif;
 }
@@ -133,12 +143,17 @@ header {
   padding-top: 2rem;
 }
 
+.carrusel {
+  display: none;
+}
+
 .gridProductos {
+  padding: 10px;
   font-family: "Bitter", serif;
   display: grid;
-  grid-template-columns: repeat(1, 100%);
-  justify-content: space-between;
-  grid-gap: 2rem;
+  grid-template-columns: repeat(1, 80%);
+  justify-content: center;
+  grid-gap: 3rem;
 }
 
 .texto {
@@ -168,12 +183,82 @@ header {
   align-items: center;
 }
 .card footer a {
+  margin-top: 15px;
   display: block;
   text-decoration: none;
   color: white;
-  padding: 4px;
+  text-align: center;
+  padding: 6px;
+  width: 100%;
   border: 1px solid #940194;
   background-color: #b406b4;
+}
+
+@media screen and (min-width: 656px) {
+  .nav-burguer {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+  }
+  .nav-carrito_table {
+    width: 500px;
+    position: absolute;
+    top: 108px;
+    right: 0;
+  }
+  .gridProductos {
+    grid-template-columns: repeat(2, 40%);
+  }
+  .texto {
+    grid-column: 1/3;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .carruselResponsive {
+    display: none;
+  }
+  .carrusel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  .carrusel-tittle h1 {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 4rem;
+  }
+  .carrusel-tittle h2 {
+    font-size: 3rem;
+    margin-left: 2rem;
+    text-transform: uppercase;
+  }
+  .carrusel-contenidoTexto {
+    display: flex;
+    margin-top: 3rem;
+  }
+  .carrusel-contenidoTexto h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .carrusel-contenidoTexto p {
+    margin: 1rem 0 0 2rem;
+  }
+  .carrusel-contenidoTexto img {
+    width: 8rem;
+    padding-top: 2rem;
+  }
+  .imagenPrincipal img {
+    width: 20rem;
+    margin: auto;
+  }
+  .gridProductos {
+    grid-template-columns: repeat(3, 33%);
+    padding: 0;
+  }
+  .texto {
+    grid-column: 1/4;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,76 @@
+@media screen and (min-width: 656px) {
+  .nav-burguer {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+  }
+  .nav-carrito_table {
+    width: 500px;
+    position: absolute;
+    top: 108px;
+    right: 0;
+  }
+  .gridProductos {
+    grid-template-columns: repeat(2, 40%);
+  }
+  .texto {
+    grid-column: 1/3;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+
+  .carruselResponsive {
+    display: none;
+  }
+  .carrusel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  .carrusel-tittle{
+      h1 {
+        font-family: $fuenteEspecial;
+        font-size: 4rem;
+      }
+      h2 {
+        font-size: 3rem;
+        margin-left: 2rem;
+        text-transform: uppercase;
+      }
+  }
+  .carrusel-contenidoTexto{
+    display: flex;
+    margin-top: 3rem;
+    h4{
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    p{
+        margin: 1rem 0  0 2rem;
+    
+    }
+    img{
+        width: 8rem;
+        padding-top: 2rem;
+    }
+}
+.imagenPrincipal{
+    img{
+        width: 20rem;
+        margin: auto;
+    }
+}
+.gridProductos {
+    grid-template-columns: repeat(3, 33%);
+    padding: 0;
+  }
+  .texto {
+    grid-column: 1/4;
+  }
+
+}
+
+

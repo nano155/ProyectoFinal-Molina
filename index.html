@@ -8,8 +8,8 @@
     <title>Gift Maket</title>
 </head>
 <body>
-    <header>
-        <nav class="nav content" id="nav">
+    <header class="content">
+        <nav class="nav" id="nav">
             <figure class="nav-logo">
                 <img src="./img/logo.jpeg" alt="imagen logo">
             </figure>
@@ -37,7 +37,7 @@
                 <li>Conocenos</li>
             </ul>
             <div id="carrito" class="nav-carrito_table">
-                <table style="width: 100%;">
+                <table>
                   <tr>
                       <thead>
                           <th>IMAGEN</th>
@@ -81,23 +81,45 @@
             </div>
     </header>
     <main>
-        <article class="carruselResponsive content">
-            <section class="carruselRresponsive-tittle">
-                <h1>Delicioso</h1>
-                <h2>Pastel de Vainilla</h2>
-            </section>
-            <section class="carruselRresponsive-contenidoTexto">
-                <figure>
-                    <img src="./img/pngegg.png" alt="imagen pastel">
-                </figure>
-                <div>
-                    <h4>Esponjoso</h4>
-                    <p>Un manjar apetecible, para los amantes del deleite del paladar.</p>
+        <div class="contenedorCarruseles">
+            <article class="carruselResponsive content">
+                <section class="carruselRresponsive-tittle">
+                    <h1>Delicioso</h1>
+                    <h2>Pastel de Vainilla</h2>
+                </section>
+                <section class="carruselRresponsive-contenidoTexto">
+                    <figure>
+                        <img src="./img/pngegg.png" alt="imagen pastel">
+                    </figure>
+                    <div>
+                        <h4>Esponjoso</h4>
+                        <p>Un manjar apetecible, para los amantes del deleite del paladar.</p>
+                    </div>
+                </section>
+            </article>
+            <article class="content carrusel">
+                <div class="textoInfo">
+                    <section class="carrusel-tittle">
+                        <h1>Delicioso</h1>
+                        <h2>Pastel de Vainilla</h2>
+                    </section>
+                    <section class="carrusel-contenidoTexto">
+                        <figure>
+                            <img src="./img/pngegg.png" alt="imagen pastel">
+                        </figure>
+                        <div>
+                            <h4>Esponjoso</h4>
+                            <p>Un manjar apetecible, para los amantes del deleite del paladar.</p>
+                        </div>
+                    </section>
                 </div>
-            </section>
-        </article>
+                <figure class="imagenPrincipal">
+                    <img src="./img/pastel.png" alt="pastel">
+                </figure>
+            </article>
+        </div>
 
-        <article id="grid-productos" class="gridProductos">
+        <article id="grid-productos" class="content gridProductos">
             <div class="texto">
                 <h2>NUESTROS PASTELES</h2>
                 <p>Elige en nuestra amplia gama</p>
@@ -114,7 +136,7 @@
             </section>
             <section class="card">
                 <figure>
-                    <img src="./img/cakes-1681543_1280.jpg" alt="pastel Vainilla">
+                    <img src="./img/cherrycake-2364352_1280.jpg" alt="pastel de cereza">
                 </figure>
                 <footer>
                     <h4>PASTEL DE CEREZA</h4>
@@ -124,7 +146,7 @@
             </section>
             <section class="card">
                 <figure>
-                    <img src="./img/cakes-1681543_1280.jpg" alt="pastel Vainilla">
+                    <img src="./img/date-of-birth-2901945_1280.jpg" alt="pastel arcoiris">
                 </figure>
                 <footer>
                     <h4>PASTEL ARCOIRIS</h4>
@@ -134,7 +156,7 @@
             </section>
             <section class="card">
                 <figure>
-                    <img src="./img/cakes-1681543_1280.jpg" alt="pastel Vainilla">
+                    <img src="./img/to-bake-1003685_1280.jpg" alt="pastel con frutas">
                 </figure>
                 <footer>
                     <h4>PASTEL CON FRUTAS</h4>
@@ -144,7 +166,7 @@
             </section>
             <section class="card">
                 <figure>
-                    <img src="./img/cakes-1681543_1280.jpg" alt="pastel Vainilla">
+                    <img src="./img/cupcakes-1850628_1280.jpg" alt="trio cupcakes">
                 </figure>
                 <footer>
                     <h4>TRIO DE CUPCAKES</h4>
@@ -158,7 +180,7 @@
             </div>
             <section class="card">
                 <figure>
-                    <img src="./img/cakes-1681543_1280.jpg" alt="pastel Vainilla">
+                    <img src="./img/bowl-1932375_1280.jpg" alt="postre de helado">
                 </figure>
                 <footer>
                     <h4>POSTRE DE HELADO</h4>
@@ -168,7 +190,7 @@
             </section>
             <section class="card">
                 <figure>
-                    <img src="./img/cakes-1681543_1280.jpg" alt="pastel Vainilla">
+                    <img src="./img/strawberry-dessert-2191973_1280.jpg" alt="postre yogurt">
                 </figure>
                 <footer>
                     <h4>POSTRE DE YOGURT</h4>
@@ -178,7 +200,7 @@
             </section>
             <section class="card">
                 <figure>
-                    <img src="./img/cakes-1681543_1280.jpg" alt="pastel Vainilla">
+                    <img src="./img/cake-1971552_1280.jpg" alt="postre de 3 leches">
                 </figure>
                 <footer>
                     <h4>POSTRE DE 3 LECHES RECUBIERTO</h4>
