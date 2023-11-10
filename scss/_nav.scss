@@ -1,9 +1,12 @@
 @import "variables";
 
 header {
+  background-color: white;
   display: flex;
   flex-direction: column;
   font-family: $fuenteNormal;
+  position: sticky;
+  top:0px
 }
 .nav {
   display: flex;
@@ -22,9 +25,17 @@ header {
   gap: 2rem;
   list-style: none;
   font-size: 1rem;
+  a{
+    color: #000000;
+    text-decoration: none;
+  }
 }
 .nav-burguer {
   padding-right: 3rem;
+  cursor: pointer;
+}
+.nav-carrito{
+  cursor: pointer;
 }
 .nav-carrito_table {
   display: none;
@@ -44,9 +55,19 @@ header {
       }
       td {
         text-align: center;
+        a{
+          text-decoration: none;
+          color: blue;
+        }
       }
     }
   }
+}
+.visibility-block{
+  display:block;  
+}
+.opciones-compra{
+  visibility: hidden;
 }
 .opciones-compra {
   display: flex;
@@ -94,7 +115,13 @@ header {
   text-transform: uppercase;
   li {
     padding: 2px;
+    a{
+      text-decoration: none;
+    }
   }
+}
+.visibility-flex{
+  display: flex;
 }
 .content {
   max-width: 1300px;

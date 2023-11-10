@@ -1,0 +1,30 @@
+[{
+    "imagen": "./img/cakes-1681543_1280.jpg",
+    "nombre": "PASTEL DE VAINILLA",
+    "precio": "20.000",
+    "id": "1"
+},
+{
+    "imagen": "./img/cherrycake-2364352_1280.jpg",
+    "nombre": "PASTEL DE CEREZA",
+    "precio": "20.000",
+    "id": "2"
+},
+{
+    "imagen": "./img/date-of-birth-2901945_1280.jpg",
+    "nombre": "PASTEL ARCOIRIS",
+    "precio": "20.000",
+    "id": "3"
+},
+{
+    "imagen": "./img/to-bake-1003685_1280.jpg",
+    "nombre": "PASTEL CON FRUTAS",
+    "precio": "20.000",
+    "id": "4"
+},
+{
+    "imagen": "./img/cupcakes-1850628_1280.jpg",
+    "nombre": "TRIO DE CUPCAKES",
+    "precio": "20.000",
+    "id": "5"
+}]

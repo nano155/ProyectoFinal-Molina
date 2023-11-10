@@ -1,0 +1,21 @@
+[{
+    "imagen":"./img/bowl-1932375_1280.jpg",
+    "nombre":"POSTRE DE HELADO",
+    "precio":"20.000",
+    "id":"6"
+},
+{
+    "imagen":"./img/strawberry-dessert-2191973_1280.jpg",
+    "nombre":"POSTRE DE YOGURT",
+    "precio":"20.000",
+    "id":"7"
+
+},
+{
+    "imagen":"./img/cake-1971552_1280.jpg",
+    "nombre":"POSTRE DE 3 LECHES RECUBIERTO",
+    "precio":"20.000",
+    "id":"8"
+
+}
+]

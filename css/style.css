@@ -5,9 +5,12 @@
 }
 
 header {
+  background-color: white;
   display: flex;
   flex-direction: column;
   font-family: "Bitter", serif;
+  position: sticky;
+  top: 0px;
 }
 
 .nav {
@@ -28,9 +31,18 @@ header {
   list-style: none;
   font-size: 1rem;
 }
+.nav-list a {
+  color: #000000;
+  text-decoration: none;
+}
 
 .nav-burguer {
   padding-right: 3rem;
+  cursor: pointer;
+}
+
+.nav-carrito {
+  cursor: pointer;
 }
 
 .nav-carrito_table {
@@ -51,6 +63,18 @@ header {
 }
 .nav-carrito_table table tbody td {
   text-align: center;
+}
+.nav-carrito_table table tbody td a {
+  text-decoration: none;
+  color: blue;
+}
+
+.visibility-block {
+  display: block;
+}
+
+.opciones-compra {
+  visibility: hidden;
 }
 
 .opciones-compra {
@@ -101,6 +125,13 @@ header {
 }
 .nav-list_responsive li {
   padding: 2px;
+}
+.nav-list_responsive li a {
+  text-decoration: none;
+}
+
+.visibility-flex {
+  display: flex;
 }
 
 .content {
@@ -193,6 +224,9 @@ header {
   border: 1px solid #940194;
   background-color: #b406b4;
 }
+.card footer a:hover {
+  background-color: #740174;
+}
 
 @media screen and (min-width: 656px) {
   .nav-burguer {
@@ -205,7 +239,7 @@ header {
     width: 500px;
     position: absolute;
     top: 108px;
-    right: 0;
+    right: 10%;
   }
   .gridProductos {
     grid-template-columns: repeat(2, 40%);
