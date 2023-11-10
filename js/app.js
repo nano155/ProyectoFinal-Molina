@@ -4,26 +4,28 @@ const productos = document.querySelector("#grid-productos");
 const carritoLista = document.querySelector("#carrito tbody");
 const carrito = document.querySelector("#carrito");
 const vaciarCarrito = document.querySelector(".btn-vaciar");
+const botonComprar = document.querySelector('#comprar')
 
 let carritoArreglo = [];
 
 const addProducts = (e) => {
   e.preventDefault();
-  Toastify({
-  text: "Producto agregado",
-  duration: 3000,
-  destination: "https://github.com/apvarun/toastify-js",
-  newWindow: true,
-  close: true,
-  gravity: "top",
-  position: "right",
-  stopOnFocus: true, 
-  style: {
-    background: "linear-gradient(to right, #940194, #b406b4)",
-  },
-  onClick: function(){} // Callback after click
-}).showToast();
+  
   if (e.target.classList.contains("boton")) {
+    Toastify({
+        text: "Producto agregado",
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true, 
+        style: {
+          background: "linear-gradient(to right, #940194, #b406b4)",
+          borderRadius: "10rem"
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
     const dato = e.target.parentElement.parentElement;
     readData(dato);
   }
@@ -91,7 +93,22 @@ const limpiarHtml = () => {
 
 const borrarProducto = (e) => {
     e.preventDefault()
+    
   if (e.target.classList.contains("borrar")) {
+    Toastify({
+        text: "Producto eliminado",
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true, 
+        style: {
+          background: "linear-gradient(to right, #940194, #b406b4)",
+          borderRadius: "10rem"
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
     const dataId = e.target.getAttribute("data-id");
     carritoArreglo = carritoArreglo.filter(
       (eliminado) => eliminado.id !== dataId
@@ -121,7 +138,14 @@ vaciarCarrito.addEventListener("click", (e) => {
   drawHtml();
   mostrarBotones();
 });
+botonComprar.addEventListener('click', (e)=>{
+    e.preventDefault()
+    carritoArreglo =[];
+    drawHtml();
+    mostrarBotones();
+})
 document.addEventListener('DOMContentLoaded', ()=>{
     carritoArreglo = JSON.parse(localStorage.getItem('carrito')) || [];
     drawHtml()
+    mostrarBotones();
 } )
