@@ -129,6 +129,11 @@ const mostrarBotones = () => {
     carrito.children[1].style.visibility = "hidden";
   }
 };
+const cargaCarrito = async()=>{
+carritoArreglo = await JSON.parse(localStorage.getItem('carrito')) || [];
+drawHtml()
+mostrarBotones();
+} 
 
 productos.addEventListener("click", addProducts);
 carrito.addEventListener("click", borrarProducto);
@@ -144,8 +149,5 @@ botonComprar.addEventListener('click', (e)=>{
     drawHtml();
     mostrarBotones();
 })
-document.addEventListener('DOMContentLoaded', ()=>{
-    carritoArreglo = JSON.parse(localStorage.getItem('carrito')) || [];
-    drawHtml()
-    mostrarBotones();
-} )
+document.addEventListener('DOMContentLoaded', cargaCarrito)
+
